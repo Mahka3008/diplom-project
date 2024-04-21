@@ -1,11 +1,11 @@
-FROM php:8.1-fpm
+FROM php:8.3-fpm
 
 WORKDIR /var/www
 
 RUN apt-get update && apt-get install -y \
 build-essential \
 libpng-dev \
-libjpeg62-turbo-dev \
+libjpeg-dev \
 libonig-dev \
 libfreetype6-dev \
 libwebp-dev \
@@ -28,7 +28,7 @@ RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl bcmath opcache
 RUN pecl install apcu && docker-php-ext-enable apcu
 
 # Устанавливаем Composer
-COPY --from=composer /usr/bin/composer /usr/bin/composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 COPY ./docker/php/php.ini /usr/local/etc/php/conf.d/php.ini
 COPY ./docker/php/www.conf /usr/local/etc/php-fpm.d/www.conf
