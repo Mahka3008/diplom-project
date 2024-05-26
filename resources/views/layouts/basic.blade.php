@@ -9,11 +9,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-@vite(['resources/css/app.css', 'resources/js/app.js'])
+@vite(['resources/css/app.css', 'resources/js/app.js', 'resources/scss/app.scss'])
     <style>
-       
 
-        
+
+
     </style>
     <style>
         .container {
@@ -28,15 +28,15 @@
     align-items: center;
     height: 62px;
   }
-  
+
   .navbar .menu-items {
     display: flex;
   }
-  
+
   .navbar .nav-container li {
     list-style: none;
   }
-  
+
   .navbar .nav-container a {
     text-decoration: none;
     color: #1ca3d0;
@@ -44,17 +44,17 @@
     font-size: 1.2rem;
     padding: 0.7rem;
   }
-  
+
   .navbar .nav-container a:hover{
       font-weight: bolder;
   }
-  
+
   .nav-container {
     display: block;
     position: relative;
     height: 60px;
   }
-  
+
   .nav-container .checkbox {
     position: absolute;
     display: block;
@@ -66,7 +66,7 @@
     opacity: 0;
     cursor: pointer;
   }
-  
+
   .nav-container .hamburger-lines {
     display: block;
     height: 26px;
@@ -79,7 +79,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .nav-container .hamburger-lines .line {
     display: block;
     height: 4px;
@@ -87,7 +87,7 @@
     border-radius: 10px;
     background: #1ca3d0;
   }
-  
+
   .nav-container .hamburger-lines .line1 {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
@@ -180,7 +180,7 @@
                 width: 100%;
                 overflow-y: auto;
             }
-           
+
             .row{
                width: 100%;
                margin: auto;
@@ -189,9 +189,9 @@
                 width: 100%;
             }
             .shell-img-2{
-                
+
             }
-      
+
         }
     </style>
 
@@ -276,8 +276,8 @@
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
-              </div>  
-           
+              </div>
+
             <div class="menu-items">
               <li><a href="/">Главная</a></li>
               <li><a href="/about">О компании</a></li>
@@ -308,21 +308,21 @@
         </nav>
         <div class="avtor">
             <div class="btn-vr">
-                <a href="">Войти</a> 
+                <a href="">Войти</a>
             </div>
             <p class="btn-vr">/</p>
             <div class="btn-vr">
-                <a href="">Регистрация</a> 
+                <a href="">Регистрация</a>
             </div>
         </div>
     </header>
 
     <main>
-      
-        
+
+
 
         @yield('content')
-        
+
     </main>
 
     <footer>
