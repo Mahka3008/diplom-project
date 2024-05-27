@@ -1,0 +1,33 @@
+.header-txt{
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px #1ca3d0;
+}
+.bloc-txt{
+    margin: 30px;
+}
+.header-project{
+    display: flex;
+    margin: 20px;
+}
+.shell-project{
+    padding: 10px;
+    color: #1ca3d0;
+    border-bottom: 0.5px solid lightgrey;
+}
+.card-project{
+display: flex;
+align-items: center;
+margin: 50px;
+border: 1px solid lightgray;
+}
+.img-project {
+display: flex;
+overflow: overlay;
+margin: 20px;
+width: 50%;
+}
+.txt-card{
+margin: 20px;
+width: 50%;
+}

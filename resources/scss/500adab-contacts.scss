@@ -1,0 +1,13 @@
+@media(max-width: 500px){
+    .maps-shell{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .maps{
+        width: 100%;
+    }
+    .row{
+        width: 100%;
+        margin: 10px;
+    }
+}

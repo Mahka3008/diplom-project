@@ -1,0 +1,63 @@
+@media(max-width: 500px) {
+    .blocs-info{
+        flex-direction: column;
+    }
+    .comp{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .img-2{
+        display: none;
+    }
+    .img-3{
+        margin: 0;
+    }
+    .inf{
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt-client{
+        margin-right: 0;
+    }
+    .comanda{
+        margin-left: 0;
+    }
+    .shell-img{
+        width: 80%;
+    }
+    .airpl{
+        display: none;
+
+    }
+    .row{
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .head-sv{
+        justify-content: center;
+    }
+    .mobile-header{
+        display: block;
+    }
+    .navig-hed{
+        display: none;
+    }
+    main{
+        margin-top: 0;
+    }
+    .logo{
+        height: 50px;
+        width: 80px;
+    }
+    .mobile-logo{
+        height: 45px;
+    }
+    .container{
+        border-bottom: 0.5px solid lightgray;
+        width: 100%;
+    }
+    .bloc-info{
+        margin-bottom: 30px;
+    }
+}

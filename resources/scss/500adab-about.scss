@@ -1,0 +1,24 @@
+@media(max-width: 500px){
+    .section-blocs{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .inf-direct{
+        margin-left: 0;
+        width: 100%
+    }
+    .project-link__title {
+    font-size: 4.25rem;
+    font-weight: 00;
+    line-height: 52px;
+    /* margin-bottom: 10px; */
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0, 0, 0, .46);
+}
+.project-link__pic{
+    height: 25vh;
+}
+}

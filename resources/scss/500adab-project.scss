@@ -1,0 +1,16 @@
+@media(max-width: 500px){
+    .header-project{
+        display: none;
+    }
+    .txt-card{
+        width: 90%;
+    }
+    .img-project{
+        width: 90%;
+    }
+    .card-project{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 5px;
+    }
+}

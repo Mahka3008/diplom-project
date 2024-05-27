@@ -1,0 +1,37 @@
+.header-txt{
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px #1ca3d0;
+
+}
+.head-contact{
+    margin: 30px;
+    display: flex;
+    justify-content: flex-end;  
+}
+.maps-shell{
+    display: flex;
+    border: 1px solid lightgrey;
+    margin: 30px;
+    padding: 30px;
+}
+.maps{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.txt-maps{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.row{
+        margin: auto;
+        width: 50%;
+    }
+    .maps-maps{
+        border: #1ca3d0 1px solid;
+    }
