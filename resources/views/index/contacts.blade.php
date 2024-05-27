@@ -1,6 +1,6 @@
 @extends('layouts.basic')
 @section('content')
-<style>
+{{-- <style>
          .header-txt{
         text-transform: uppercase;
         color: transparent;
@@ -52,7 +52,7 @@
                 margin: 10px;
             }
         }
-</style>
+</style> --}}
 <section class="header-txt head-contact">
     <h1>ОФИС В МОСКВЕ</h1>
 </section> 

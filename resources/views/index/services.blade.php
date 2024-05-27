@@ -1,6 +1,6 @@
 @extends('layouts.basic')
 @section('content')
-<style>
+{{-- <style>
  .header-txt{
         text-transform: uppercase;
         color: transparent;
@@ -53,7 +53,7 @@
             width: 90%;
         }
     }
-</style>
+</style> --}}
 
 <section class="head-section">
     <div class="shell-header-txt">

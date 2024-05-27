@@ -1,0 +1,43 @@
+.navig-hed{
+    display: flex;
+    justify-content:  flex-start;
+    border-bottom: 0.5px solid #1ca3d0;
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    left: 0;
+}
+.navig{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: #1ca3d0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.navig-rod{
+    display: flex;
+    margin-left: 10px;
+}
+.avtor{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.btn-navig{
+    margin: 10px;
+}
+.btn-vr{
+    margin: 5px;
+    color: #1ca3d0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}

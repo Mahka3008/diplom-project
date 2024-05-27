@@ -1,6 +1,6 @@
 @extends('layouts.basic')
 @section('content')
-<style>
+{{-- <style>
      .header-txt{
         text-transform: uppercase;
         color: transparent;
@@ -52,7 +52,7 @@
         }
     }
 
-</style>
+</style> --}}
 <section class="header-txt bloc-txt">
         <h1 class="">ПРОЕКТЫ</h1>
 </section>

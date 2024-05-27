@@ -1,0 +1,16 @@
+@media(max-width: 500px){
+    .section-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt-main{
+        width: 90%;
+    }
+
+    .img-main{
+
+        width: 90%;
+    }
+}

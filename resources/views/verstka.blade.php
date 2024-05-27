@@ -381,7 +381,6 @@
         }
     </style>
 
-
         <style>
             @media(max-width: 500px){
             .blocs-info{
@@ -497,7 +496,6 @@
         </div>
     </header>
 
-
     <main>
         <section class="inf">
             <div class="comp">
@@ -511,7 +509,6 @@
             
         </section>
 
-
         <section class="inf">
             <div class="shell-img">
                 <img src="https://proconsgroup.com/upload/images/team.png" class="img-3 img" alt="не загрузилось">
@@ -523,14 +520,12 @@
             </div>
         </section>
 
-
         <section class="blocs-info">
             <div class="bloc-info"><h4 class="dising-bloc">18</h4><p class="txt-info"> лет на рынке Российской Федерации и СНГ</p></div>
             <div class="bloc-info"><h4 class="dising-bloc">38</h4><p class="txt-info"> высококвалифицированных специалистов</p></div>
             <div class="bloc-info"><h4 class="dising-bloc">более 100</h4><p class="txt-info"> выполненных проектов</p></div>
             <div class="bloc-info"> <h4 class="dising-bloc num">200 000</h4><p class="txt-info"> реализованных строительно-монтажных и отделочных работ</p></div>
         </section>
-
 
         <section class="inf clients">
             <h1 class="txt-client">Клиенты</h1>
@@ -551,8 +546,8 @@
                 </div>
             </div>
         </section>
+
        <section>
-      
        <form class="row g-2">
         <div class="head-sv">
        <h1 class="txt-client">Обратная связь</h1>
@@ -560,36 +555,37 @@
             <img class="airpl" src="https://proconsgroup.com/local/templates/procons/images/callback.png" alt="">
         </div>
         </div>
-  <div >
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
-  </div>
-  <div >
-    <label for="inputCity" class="form-label">ФИО</label>
-    <input type="text" class="form-control" id="inputAddress">
-  </div>
-  <div>
-    <label for="inputCity" class="form-label">Телефон</label>
-    <input type="number" class="form-control" id="inputAddress2" >
-  </div>
-  <div >
-    <label for="inputCity" class="form-label">Ваше сообщение</label>
-    <input type="text" class="form-control" id="inputCity">
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-      Я ознакомился и принимаю условия политики конфиденциальноcти
-      </label>
-    </div>
-  </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Отправить</button>
-  </div>
-</form>
- </section>
+        <div>
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div >
+            <label for="inputCity" class="form-label">ФИО</label>
+            <input type="text" class="form-control" id="inputAddress">
+        </div>
+        <div>
+            <label for="inputCity" class="form-label">Телефон</label>
+            <input type="number" class="form-control" id="inputAddress2" >
+        </div>
+        <div >
+            <label for="inputCity" class="form-label">Ваше сообщение</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            Я ознакомился и принимаю условия политики конфиденциальноcти
+            </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </div>
+    </form>
+    </section>
 </main>
+
     <footer>
         <p>© 2024. Procons Group</p>
         <p>Разработано Залыгина Мария Алексеевна</p>

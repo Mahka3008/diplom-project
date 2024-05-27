@@ -1,0 +1,42 @@
+@media(max-width: 900px) {
+    .inf{
+       width: auto;
+    }
+    main{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10;
+    }
+    .comp{
+        width: 60%;
+    }
+    .comanda{
+        width: 50%;
+        margin-left: 10%;
+    }
+    .shell-img{
+        width: 40%;
+    }
+    .img{
+        width: 100%;
+        height: auto;
+    }
+    .blocs-info{
+      font-size: 13px;
+    }
+    .clients{
+        flex-direction: column;
+    }
+    .client-block{
+        width: 100%;
+        overflow-y: auto;
+    }
+   
+    .row{
+       width: 100%;
+       margin: auto;
+    }
+    footer{
+        width: 100%;
+    }
+}

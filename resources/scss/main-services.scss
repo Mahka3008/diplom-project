@@ -1,0 +1,35 @@
+.header-txt{
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px #1ca3d0;
+    font-size: 50px;
+}
+.head-section{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.txt{
+    font-size: 20px;
+}
+.head-txt-m{
+    color: #1ca3d0;
+}
+.section-main{
+    display: flex;
+    margin: 20px;
+    
+}
+.txt-main{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 50%;
+}
+.img-main{
+    display: flex;
+    overflow: overlay;
+    border-radius: 20px;
+    width: 50%;
+}
