@@ -55,40 +55,42 @@
     </section>
    <section>
   
-   <form class="row g-2">
+   <form class="row g-2" method="post" action="/submit">
+    @csrf.
     <div class="head-sv">
    <h1 class="txt-client">Обратная связь</h1>
    <div>
         <img class="airpl" src="https://proconsgroup.com/local/templates/procons/images/callback.png" alt="">
     </div>
     </div>
-<div >
-<label for="inputEmail4" class="form-label">Email</label>
-<input type="email" class="form-control" id="inputEmail4">
-</div>
-<div >
-<label for="inputCity" class="form-label">ФИО</label>
-<input type="text" class="form-control" id="inputAddress">
-</div>
-<div>
-<label for="inputCity" class="form-label">Телефон</label>
-<input type="number" class="form-control" id="inputAddress2" >
-</div>
-<div >
-<label for="inputCity" class="form-label">Ваше сообщение</label>
-<input type="text" class="form-control" id="inputCity">
-</div>
-<div class="col-12">
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" id="gridCheck">
-  <label class="form-check-label" for="gridCheck">
-  Я ознакомился и принимаю условия политики конфиденциальноcти
-  </label>
-</div>
-</div>
-<div class="col-12">
-<button type="submit" class="btn btn-primary">Отправить</button>
-</div>
+    <div >
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" name="email" class="form-control" id="inputEmail4">
+    </div>
+    <div >
+        <label for="inputName" class="form-label">ФИО</label>
+        <input type="text" name="name" class="form-control" id="inputName">
+    </div>
+    <div>
+        <label for="inputNumber" class="form-label">Телефон</label>
+        <input type="number" name="numberPhone" class="form-control" id="inputNumber2" >
+    </div>
+    <div >
+        <label for="inputAppl" class="form-label">Ваше сообщение</label>
+        <input type="text" name="appl" class="form-control" id="inputAppl">
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            Я ознакомился и принимаю условия политики конфиденциальноcти
+            </label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </div>
+    @csrf.
 </form>
 </section>
 

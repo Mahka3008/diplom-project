@@ -42,4 +42,9 @@ class IndexController extends Controller
         {
             return  view("index.contacts");
         }
+
+        public function calculator()
+        {
+            return  view("index.calculator");
+        }
 }
