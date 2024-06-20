@@ -47,4 +47,9 @@ class IndexController extends Controller
         {
             return  view("index.calculator");
         }
+
+        public function admin()
+        {
+            return  view("index.admin");
+        }
 }

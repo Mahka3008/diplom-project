@@ -5,7 +5,7 @@
         <div class="comp">
             <h1 class="zag-comp" >О компании</h1>
             <p class="txt-comp" >Компания Procons Group была основана в 2003 году в Москве. В начале профессиональной деятельности в эпоху активного строительства крупных торговых центров в России Procons Group одними из первых начали осуществлять строительно-монтажные и отделочные работы в сфере ритейла.</p>
-            <a class="btn btn-primary" href="">Подробнее</a>
+            <a class="btn btn-primary btn2" href="/about">Подробнее</a>
         </div>
         <div class="shell-img-2 shell-img">
             <img src="https://proconsgroup.com/upload/iblock/632/eqe1ptqfq55b87k3eh0x09zm0qzgnurw.jpg" class="img-2 img"  alt="не загрузилось">
@@ -21,7 +21,6 @@
         <div class="comp comanda">
             <h1  class="zag-comp">Команда</h1>
             <p class="txt-comp">Компания обладает всем необходимым материально-техническим оснащением, высококвалифицированным административным персоналом, специалистами и мастерами для выполнения самых ответственных проектов.</p>
-            <a class="btn btn-primary" href="">Подробнее</a>
         </div>
     </section>
 

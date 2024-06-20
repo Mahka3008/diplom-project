@@ -17,9 +17,10 @@ use App\Http\Controllers\IndexController;
 
 Route::get('/', [IndexController::class, "index"]);
 
-Route::get('/verstka', function () {
-    return view('verstka');
-});
+
+// Route::get('/verstka', function () {
+//     return view('verstka');
+// });
 
 Route::get('about', [IndexController::class, "about"]);
 
@@ -37,4 +38,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::post('submit', function(){
+    dump(request()->all());
+});
 
+Route::get('admin', [IndexController::class, "admin"]);

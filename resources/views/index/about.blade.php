@@ -48,7 +48,7 @@
     <img alt="Наши Проекты" src="https://proconsgroup.com/upload/images/project-bg.png" class="project-link__pic" role="presentation">
    <div class="project-link__inner inner">
        <p class="project-link__title">Наши<br>Проекты</p>
-        <a class="btn btn-primary" href="#">В раздел</a>
+        <a class="btn btn-primary" href="/project">В раздел</a>
    </div>
 </section>
 @endsection
