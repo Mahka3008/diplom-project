@@ -279,11 +279,7 @@
               </div>
 
             <div class="menu-items">
-              <li><a href="/">Главная</a></li>
-              <li><a href="/about">О компании</a></li>
-              <li><a href="/project">Проекты</a></li>
-              <li><a href="/services">Услуги</a></li>
-              <li><a href="/contacts">Контакты</a></li>
+              <li><a href="/register">Добавить нового пользователя</a></li>
             </div>
             <div class="logo">
                 <img src="https://proconsgroup.com/local/templates/procons/icon/logo.svg" alt="не загрузилось" class="mobile-logo" >
@@ -297,11 +293,7 @@
         </div>
         <nav class="navig-rod">
             <ul class="navig">
-                <li class="btn-navig"><a href="/">Главная</a></li>
-                <li class="btn-navig"><a href="/about">О компании</a></li>
-                <li class="btn-navig"><a href="/project">Проекты</a></li>
-                <li class="btn-navig"><a href="/services">Услуги</a></li>
-                <li class="btn-navig"><a href="/contacts">Контакты</a></li>
+                <li class="btn-navig"><a href="/register">Добавить нового пользователя</a></li>
             </ul>
         </nav>
         @if (auth()->user())
@@ -315,12 +307,12 @@
             <div class="btn-vr">
                 <a href="/login">Войти</a>
             </div>
-            {{-- <p class="btn-vr">/</p>
+            <p class="btn-vr">/</p>
             <div>
                  <div class="btn-vr">
                     <a href="/register">Регистрация</a>
                  </div>
-            </div> --}}
+            </div>
         </div>  
         @endif
         

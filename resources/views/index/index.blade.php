@@ -5,7 +5,7 @@
         <div class="comp">
             <h1 class="zag-comp" >О компании</h1>
             <p class="txt-comp" >Компания Procons Group была основана в 2003 году в Москве. В начале профессиональной деятельности в эпоху активного строительства крупных торговых центров в России Procons Group одними из первых начали осуществлять строительно-монтажные и отделочные работы в сфере ритейла.</p>
-            <a class="btn btn-primary" href="">Подробнее</a>
+            <a class="btn btn-primary btn2" href="/about">Подробнее</a>
         </div>
         <div class="shell-img-2 shell-img">
             <img src="https://proconsgroup.com/upload/iblock/632/eqe1ptqfq55b87k3eh0x09zm0qzgnurw.jpg" class="img-2 img"  alt="не загрузилось">
@@ -21,7 +21,6 @@
         <div class="comp comanda">
             <h1  class="zag-comp">Команда</h1>
             <p class="txt-comp">Компания обладает всем необходимым материально-техническим оснащением, высококвалифицированным административным персоналом, специалистами и мастерами для выполнения самых ответственных проектов.</p>
-            <a class="btn btn-primary" href="">Подробнее</a>
         </div>
     </section>
 
@@ -55,40 +54,42 @@
     </section>
    <section>
   
-   <form class="row g-2">
+   <form class="row g-2" method="post" action="/submit">
+    @csrf.
     <div class="head-sv">
    <h1 class="txt-client">Обратная связь</h1>
    <div>
         <img class="airpl" src="https://proconsgroup.com/local/templates/procons/images/callback.png" alt="">
     </div>
     </div>
-<div >
-<label for="inputEmail4" class="form-label">Email</label>
-<input type="email" class="form-control" id="inputEmail4">
-</div>
-<div >
-<label for="inputCity" class="form-label">ФИО</label>
-<input type="text" class="form-control" id="inputAddress">
-</div>
-<div>
-<label for="inputCity" class="form-label">Телефон</label>
-<input type="number" class="form-control" id="inputAddress2" >
-</div>
-<div >
-<label for="inputCity" class="form-label">Ваше сообщение</label>
-<input type="text" class="form-control" id="inputCity">
-</div>
-<div class="col-12">
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" id="gridCheck">
-  <label class="form-check-label" for="gridCheck">
-  Я ознакомился и принимаю условия политики конфиденциальноcти
-  </label>
-</div>
-</div>
-<div class="col-12">
-<button type="submit" class="btn btn-primary">Отправить</button>
-</div>
+    <div >
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" name="email" class="form-control" id="inputEmail4">
+    </div>
+    <div >
+        <label for="inputName" class="form-label">ФИО</label>
+        <input type="text" name="name" class="form-control" id="inputName">
+    </div>
+    <div>
+        <label for="inputNumber" class="form-label">Телефон</label>
+        <input type="number" name="numberPhone" class="form-control" id="inputNumber2" >
+    </div>
+    <div >
+        <label for="inputAppl" class="form-label">Ваше сообщение</label>
+        <input type="text" name="appl" class="form-control" id="inputAppl">
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            Я ознакомился и принимаю условия политики конфиденциальноcти
+            </label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </div>
+    @csrf.
 </form>
 </section>
 
