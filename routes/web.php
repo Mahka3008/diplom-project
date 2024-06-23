@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,12 +35,19 @@ Route::get('contacts', [IndexController::class, "contacts"]);
 
 Route::get('calculator', [IndexController::class, "calculator"]);
 
+Route::get('regist', [IndexController::class, 'showRegistForm']);
+
+Route::post('regist', [IndexController::class, 'regist']);
+
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('submit', [IndexController::class, "createApplea"]);
 
-Route::post('submit', function(){
-    dump(request()->all());
-});
+Route::get('admin', [IndexController::class, "admin"])->middleware("authUser");
 
-Route::get('admin', [IndexController::class, "admin"]);
+Route::get('admin-login', [IndexController::class, "adminLogin"]);
+
+Route::get('accept-apple/{appeal}', [IndexController::class, "acceptApple"]);
+
+
+

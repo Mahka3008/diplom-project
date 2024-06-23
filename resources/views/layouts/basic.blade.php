@@ -304,7 +304,7 @@
                 <li class="btn-navig"><a href="/contacts">Контакты</a></li>
             </ul>
         </nav>
-        @if (auth()->user())
+        {{-- @if (auth()->user())
         {{auth()->user()->name}}
         <form class="form-logout" action="/logout" method="POST">
             @csrf
@@ -315,14 +315,14 @@
             <div class="btn-vr">
                 <a href="/login">Войти</a>
             </div>
-            {{-- <p class="btn-vr">/</p>
+            <p class="btn-vr">/</p>
             <div>
                  <div class="btn-vr">
                     <a href="/register">Регистрация</a>
                  </div>
-            </div> --}}
+            </div>
         </div>  
-        @endif
+        @endif --}}
         
     </header>
 
