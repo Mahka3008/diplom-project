@@ -54,7 +54,7 @@
     </section>
    <section>
   
-   <form class="row g-2" method="post" action="/submit">
+   <form class="row g-2 form-appl" method="post" action="/submit">
     @csrf.
     <div class="head-sv">
    <h1 class="txt-client">Обратная связь</h1>
@@ -89,8 +89,23 @@
     <div class="col-12">
         <button type="submit" class="btn btn-primary">Отправить</button>
     </div>
-    @csrf.
 </form>
+<script>
+    const form = document.querySelector('.form-appl')
+    if(form){
+        form.onsubmit = (oe) => {
+            oe.preventDefault();
+            const data = new FormData(form);
+            console.log('data', data)
+            axios.post("/submit", data)
+            .then(res => {
+                console.log("res", res)
+                alert(res.data.massage)
+                form.reset()
+            })
+        }
+    }
+</script>
 </section>
 
 @endsection

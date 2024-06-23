@@ -10,12 +10,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/scss/app.scss'])
-<style>
-    .user-name{
-        color:#1ca3d0;
-        margin: 5px;
-    }
-</style>
+
 </head>
 <body>
 <nav class="mobile-header">
@@ -28,9 +23,9 @@
                 <span class="line line3"></span>
               </div>
 
-            <div class="menu-items">
+            {{-- <div class="menu-items">
               <li><a href="/register">Добавить нового пользователя</a></li>
-            </div>
+            </div> --}}
             <div class="logo">
                 <img src="https://proconsgroup.com/local/templates/procons/icon/logo.svg" alt="не загрузилось" class="mobile-logo" >
                </div>
@@ -41,21 +36,23 @@
         <div class="logo">
             <img src="./imgs/image.png" class="img-1" alt="не загрузилось">
         </div>
-        <nav class="navig-rod">
+        {{-- <nav class="navig-rod">
             <ul class="navig">
-                @if(auth()->user()->role_id == 2)
-                <li class="btn-navig"><a href="/regist">Добавить нового пользователя</a></li>
-                @endif
+                <li class="btn-navig"><a href="/register">Добавить нового пользователя</a></li>
             </ul>
-        </nav>
-        @if (auth()->user()) 
-        <div class="form-logout">
-        <span class="user-name">{{auth()->user()->name}}</span> 
-        <form  action="/logout" method="POST">
+        </nav> --}}
+        @if (auth()->user())
+        {{auth()->user()->name}}
+        <form class="form-logout" action="/logout" method="POST">
             @csrf
             <button class="btn btn-primary">Выйти</button>
         </form>
-     </div>
+        @else
+        <div class="shell-avtor">
+            <div class="btn-vr">
+                <a href="/login">Войти</a>
+            </div>
+        </div>  
         @endif
         
     </header>

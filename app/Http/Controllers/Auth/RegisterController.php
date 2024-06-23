@@ -61,12 +61,23 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function create(array $data)
+    protected function register(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        // return User::create([
+        //     'name' => $data['name'],
+        //     'email' => $data['email'],
+        //     'password' => Hash::make($data['password']),
+        // ]);
+        dump($data);
+    }
+
+    public function showRegistForm()
+    {
+        $additionalData = [
+            'key1' => 'value1',
+            'key2' => 'value2',
+        ];
+        dump($additionalData);
+        // return view('auth.register', $additionalData);
     }
 }

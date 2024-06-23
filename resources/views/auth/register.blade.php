@@ -70,11 +70,11 @@
                         <div class="shell-roles">
                           
                                 <label for="name" class="label-role">{{ __('Роль') }}</label>
-                            
-                            <select   class="select-role" name="" id="">
+                            <select   class="select-role" name="role_id" id="">
                                 <option selected="selected">Выберите роль</option>
-                                <option value="300">Администратор</option>
-                                <option value="300">Менеджер</option>
+                                @foreach ($roles as $role )
+                                     <option value="{{$role->id}}">{{$role->name}}</option>
+                                @endforeach
                             </select>
                         </div>
 
